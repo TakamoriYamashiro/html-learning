@@ -1,0 +1,7 @@
+﻿var dom = fw.getDocumentDOM();
+dom.setDocumentCanvasSizeToDocumentExtents(true);
+var w = dom.width, h = dom.height;
+if(w%2==1){
+	dom.setDocumentCanvasSize({left:0, top:0, right:w+1, bottom:h}, true);	
+}
+
